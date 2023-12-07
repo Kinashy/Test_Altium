@@ -1,0 +1,13 @@
+Added Component: Designator=С2(0201 C0G 7пФ 25В)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/grm0335c1e7r0bd01d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Емкость"; Value = "7пФ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Корпус"; Value = "smd 0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "25"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDD1_2 Pin=С2-1
+Added Pin To Net: NetName=GND Pin=С2-2
+Added Member To Class: ClassName=Sheet1 Member=Component C6 100нФ
+Added Member To Class: ClassName=Sheet1 Member=Component C9 7пкФ
+Added Member To Class: ClassName=Sheet1 Member=Component R5 200Ом
+Added Member To Class: ClassName=Sheet1 Member=Component С2 2,4пФ
+Added Member To Class: ClassName=Sheet1 Member=Component С12 10мкФ
+Added Room: Name=Sheet1

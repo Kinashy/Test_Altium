@@ -1,0 +1,407 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">03.12.2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">17:14:45</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc" class="file"><acronym title="D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc">D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">25</td></tr>
+</table>
+</td>
+</table><a name="IDNZW2WSDW12WDJLDRMOZEMCR0KHOOTE321O2V3SEQ0QXNHMSXOWRO"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMVFZTBKF2XKUDZ12F2RBJ4QSIKOY4XBLL12SPGMKLAWWXDO3FNTM">Clearance Constraint (Gap=0.05mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID52N1B4BEYJPTNGBWCKYZT3CWPL5M5LIRDYI35EDJZFPDAML5UTFN">Short-Circuit Constraint (Allowed=Yes) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3FI2HUCDKDB1OBS0SY3JUX1X3HUJ43BS21HRHCP3SHRZ0QQQ33UM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOH3W4JVBCVN1NCIC2C2P4Q1F3KOD4TQWOFH5X4C21Z5ULVOI0WXK">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5J141FWANNCPOMEDT1P0Q4QR2LLWLV0VANYS10CSB4PLXFC14DCD">Width Constraint (Min=0.1mm) (Max=0.6mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDO2KJJRTS34IUIQDEOY2X52NHZH12DDPAELWVHWFV5FIN2CPN30HJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (Disabled)(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZQ2XBG4XSLYYISA55XPRYDG1SI1G4IFZPUJSSRE4LQECADBNNWBN">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZ2DSXJU3R34RFIYSB2HQEDDNVKZYMSDM2VHRAVFZKMOP52IQFTN">Hole To Hole Clearance (Gap=0.127mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0IRIONDSAXZK1P45BSLTAB2EEMPF05V241DSUVGVYYFRKUSLIM">Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID0O4TJA1YAPWRLOS4VJOFNCFRXXIHLDKBON34TNTNPRO13KLYUTI">Silk To Solder Mask (Clearance=0.1mm) (IsText),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDCP2EPUBCGML3LONSTM2VSRQFNNOGPITHKXP50TJFOZG0BOIYOKAB">Silk to Silk (Clearance=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRERLSHF2BBH3IW5CRV1XNFZYNOHTID0Y1ITHXDPAGYJNZUBJCBRP">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">7</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSOKEEKM5GSZXHCAPFBVPZAATSDCG4ZSXXIXNJPLZZ1URDA05LPN">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">25</td>
+</tr>
+</table><br><a name="ID3FI2HUCDKDB1OBS0SY3JUX1X3HUJ43BS21HRHCP3SHRZ0QQQ33UM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5651.575mil|Location2.X=5867.087mil|Location1.Y=2976.378mil|Location2.Y=3147.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5651.575mil|Location2.X=5867.087mil|Location1.Y=2976.378mil|Location2.Y=3147.008mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C5-2(143.9mm,75.8mm) on Top Layer And Pad С7-2(148.674mm,79.384mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5379.291mil|Location2.X=5646.221mil|Location1.Y=2970.236mil|Location2.Y=3170.236mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5379.291mil|Location2.X=5646.221mil|Location1.Y=2970.236mil|Location2.Y=3170.236mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C6-2(139.174mm,77.984mm) on Top Layer And Track (140.874mm,77.533mm)(140.874mm,77.984mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5262.756mil|Location2.X=5505.866mil|Location1.Y=3606.85mil|Location2.Y=3740.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5262.756mil|Location2.X=5505.866mil|Location1.Y=3606.85mil|Location2.Y=3740.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C9-1(133.974mm,91.884mm) on Top Layer And Pad DD2-4(139.074mm,94.654mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5485.591mil|Location2.X=5698.386mil|Location1.Y=3119.843mil|Location2.Y=3323.78mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5485.591mil|Location2.X=5698.386mil|Location1.Y=3119.843mil|Location2.Y=3323.78mil|Absolute=True">Un-Routed Net Constraint: Net NetDD1_3 Between Track (141.874mm,81.634mm)(141.874mm,81.784mm) on Top Layer And Pad DD1-4(142.199mm,81.884mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5444.842mil|Location2.X=5739.709mil|Location1.Y=3497.496mil|Location2.Y=3740.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5444.842mil|Location2.X=5739.709mil|Location1.Y=3497.496mil|Location2.Y=3740.315mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad DD2-4(139.074mm,94.654mm) on Top Layer And Via (144.925mm,89.7mm) from GND to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.039mil|Location2.X=5789.921mil|Location1.Y=3766.142mil|Location2.Y=3976.535mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5085.039mil|Location2.X=5789.921mil|Location1.Y=3766.142mil|Location2.Y=3976.535mil|Absolute=True">Un-Routed Net Constraint: Net 3,3B Between Track (131.7mm,98.2mm)(131.7mm,98.3mm) on Top Layer And Pad DD2-8(144.524mm,98.464mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5042.677mil|Location2.X=5478.937mil|Location1.Y=3001.732mil|Location2.Y=3097.047mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5042.677mil|Location2.X=5478.937mil|Location1.Y=3001.732mil|Location2.Y=3097.047mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R1-2(130.624mm,78.784mm) on Top Layer And Track (136.625mm,76.125mm)(136.8mm,76.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5681.102mil|Location2.X=5827.717mil|Location1.Y=2809.055mil|Location2.Y=2840.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5681.102mil|Location2.X=5827.717mil|Location1.Y=2809.055mil|Location2.Y=2840.551mil|Absolute=True">Un-Routed Net Constraint: Net NetK1_3 Between Pad R6-2(145.1mm,71.75mm) on Top Layer And Pad С12-2(147.474mm,71.784mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.386mil|Location2.X=5060mil|Location1.Y=1921.063mil|Location2.Y=2536.772mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2188.386mil|Location2.X=5060mil|Location1.Y=1921.063mil|Location2.Y=2536.772mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad X3-2(56.474mm,49.684mm) on Multi-Layer And Pad VD1-2(128.174mm,63.859mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4946.221mil|Location2.X=5450.276mil|Location1.Y=2414.134mil|Location2.Y=2452.795mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4946.221mil|Location2.X=5450.276mil|Location1.Y=2414.134mil|Location2.Y=2452.795mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad VD1-2(128.174mm,63.859mm) on Top Layer And Track (135.674mm,59.984mm)(135.897mm,59.761mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4015.157mil|Location2.X=5597.402mil|Location1.Y=1928.937mil|Location2.Y=2540.709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4015.157mil|Location2.X=5597.402mil|Location1.Y=1928.937mil|Location2.Y=2540.709mil|Absolute=True">Un-Routed Net Constraint: Net VBAT Between Pad X2-1(102.874mm,49.884mm) on Multi-Layer And Pad VT1-2(141.624mm,63.784mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2715.945mil|Location2.X=3557.598mil|Location1.Y=1917.126mil|Location2.Y=2002.874mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2715.945mil|Location2.X=3557.598mil|Location1.Y=1917.126mil|Location2.Y=2002.874mil|Absolute=True">Un-Routed Net Constraint: Net NetX2_2 Between Pad X3-1(69.874mm,49.584mm) on Multi-Layer And Pad X2-2(89.474mm,49.984mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4946.614mil|Location2.X=5268.779mil|Location1.Y=3611.968mil|Location2.Y=3399.685mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4946.614mil|Location2.X=5268.779mil|Location1.Y=3611.968mil|Location2.Y=3399.685mil|Absolute=True">Un-Routed Net Constraint: Net 3,3B Between Track (127.274mm,94.284mm)(128.184mm,94.284mm) on Bottom Layer And Track (131.287mm,81.997mm)(131.287mm,83.812mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4930.472mil|Location2.X=5295.827mil|Location1.Y=3515.118mil|Location2.Y=3674.173mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4930.472mil|Location2.X=5295.827mil|Location1.Y=3515.118mil|Location2.Y=3674.173mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (127.287mm,91.725mm)(127.774mm,91.824mm) on Top Layer And Via (131.974mm,90.784mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5446.221mil|Location2.X=5708.228mil|Location1.Y=2970.236mil|Location2.Y=3375.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5446.221mil|Location2.X=5708.228mil|Location1.Y=2970.236mil|Location2.Y=3375.945mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (140.874mm,77.533mm)(140.874mm,77.984mm) on Top Layer And Via (142.449mm,83.209mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5513.15mil|Location2.X=5819.449mil|Location1.Y=2970.236mil|Location2.Y=3225.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5513.15mil|Location2.X=5819.449mil|Location1.Y=2970.236mil|Location2.Y=3225.354mil|Absolute=True">Un-Routed Net Constraint: Net 3,3B Between Track (142.574mm,77.984mm)(143.674mm,77.984mm) on Top Layer And Via (145.274mm,79.384mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5528.937mil|Location2.X=6311.575mil|Location1.Y=2216.929mil|Location2.Y=2359.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5528.937mil|Location2.X=6311.575mil|Location1.Y=2216.929mil|Location2.Y=2359.213mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Track (142.975mm,58.85mm)(143.025mm,58.6mm) on Top Layer And Via (157.774mm,57.384mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5027.968mil|Location2.X=5158.961mil|Location1.Y=2788.205mil|Location2.Y=3084.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5027.968mil|Location2.X=5158.961mil|Location1.Y=2788.205mil|Location2.Y=3084.551mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Via (128.574mm,77.484mm) from Top Layer to GND And Via (130.174mm,71.684mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDRERLSHF2BBH3IW5CRV1XNFZYNOHTID0Y1ITHXDPAGYJNZUBJCBRP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5844.807mil|Location2.X=5868.396mil|Location1.Y=3191.657mil|Location2.Y=3225.857mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5844.807mil|Location2.X=5868.396mil|Location1.Y=3191.657mil|Location2.Y=3225.857mil|Absolute=True">Net Antennae: Track (148.674mm,81.284mm)(150.774mm,81.284mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5024.468mil|Location2.X=5111.189mil|Location1.Y=3013.051mil|Location2.Y=3153.392mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5024.468mil|Location2.X=5111.189mil|Location1.Y=3013.051mil|Location2.Y=3153.392mil|Absolute=True">Net Antennae: Via (128.574mm,77.484mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5087.461mil|Location2.X=5174.181mil|Location1.Y=2784.705mil|Location2.Y=2925.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5087.461mil|Location2.X=5174.181mil|Location1.Y=2784.705mil|Location2.Y=2925.046mil|Absolute=True">Net Antennae: Via (130.174mm,71.684mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5158.327mil|Location2.X=5245.047mil|Location1.Y=3536.673mil|Location2.Y=3677.014mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5158.327mil|Location2.X=5245.047mil|Location1.Y=3536.673mil|Location2.Y=3677.014mil|Absolute=True">Net Antennae: Via (131.974mm,90.784mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5433.917mil|Location2.X=5520.637mil|Location1.Y=3914.626mil|Location2.Y=4054.967mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5433.917mil|Location2.X=5520.637mil|Location1.Y=3914.626mil|Location2.Y=4054.967mil|Absolute=True">Net Antennae: Via (138.974mm,100.384mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5668.209mil|Location2.X=5754.929mil|Location1.Y=3493.996mil|Location2.Y=3634.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5668.209mil|Location2.X=5754.929mil|Location1.Y=3493.996mil|Location2.Y=3634.337mil|Absolute=True">Net Antennae: Via (144.925mm,89.7mm) from GND to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%D0%BD%D0%BE%D0%B5%D0%B2 %D0%BA%D0%BE%D0%B2%D1%87%D0%B5%D0%B3\%D0%9E%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5\%D0%A1%D0%90%D0%9F%D0%A0\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6174.075mil|Location2.X=6260.795mil|Location1.Y=2221.713mil|Location2.Y=2362.053mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6174.075mil|Location2.X=6260.795mil|Location1.Y=2221.713mil|Location2.Y=2362.053mil|Absolute=True">Net Antennae: Via (157.774mm,57.384mm) from Top Layer to GND </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

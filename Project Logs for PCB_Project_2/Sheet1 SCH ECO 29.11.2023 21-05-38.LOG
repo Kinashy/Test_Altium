@@ -1,0 +1,18 @@
+Remove Pin=XP1-3 From Net=TXD_P
+Remove Pin=XP1-5 From Net=RXD_P
+Remove Pin=XP1-7 From Net=IO5
+Remove Pin=XP2-1 From Net=TOUT
+Remove Pin=XP2-4 From Net=IO12
+Remove Pin=XP2-5 From Net=IO13
+Remove Pin=XP2-6 From Net=IO14
+Remove Pin=XP2-7 From Net=IO15
+Add Pin To Net: Pin=XP1-4 Old Net=IO2 New Net=IO15
+Add Pin To Net: Pin=XP1-5 Old Net=RXD_P New Net=IO13
+Add Pin To Net: Pin=XP1-6 Old Net=IO4 New Net=IO12
+Add Pin To Net: Pin=XP1-7 Old Net=IO5 New Net=IO14
+Add Pin To Net: Pin=XP2-5 Old Net=IO13 New Net=IO5
+Add Pin To Net: Pin=XP2-6 Old Net=IO14 New Net=RXD_P
+Add Pin To Net: Pin=XP2-7 Old Net=IO15 New Net=TXD_P
+Change Pin Designator/Name:  Old Designator=XP1-4 Old Name=4 New Designator =3 New Name=3
+Change Pin Designator/Name:  Old Designator=XP1-6 Old Name=6 New Designator =1 New Name=1
+Change Pin Designator/Name:  Old Designator=XP2-3 Old Name=3 New Designator =1 New Name=1

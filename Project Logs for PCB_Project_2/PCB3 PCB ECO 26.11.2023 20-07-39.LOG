@@ -1,0 +1,268 @@
+Added Component: Designator=C1(0201 C0G 7пФ 25В)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/grm0335c1e7r0bd01d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Емкость"; Value = "7пФ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Корпус"; Value = "smd 0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "25"; VariantName = "[No Variations]"
+Added Component: Designator=C4(FB 0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm188r60g106me47d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "4В"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "10мкФ"; VariantName = "[No Variations]"
+Added Component: Designator=C5(RES 0402)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm152c80g104ke19d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C6(RES 0402)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm152c80g104ke19d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=C8(FB 0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm188r60g106me47d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "4В"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "10мкФ"; VariantName = "[No Variations]"
+Added Component: Designator=C9(0201 C0G 7пФ 25В)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/grm0335c1e7r0bd01d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Емкость"; Value = "7пФ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Корпус"; Value = "smd 0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "25"; VariantName = "[No Variations]"
+Added Component: Designator=C10(0201 C0G 7пФ 25В)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/grm0335c1e7r0bd01d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Емкость"; Value = "7пФ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Корпус"; Value = "smd 0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "25"; VariantName = "[No Variations]"
+Added Component: Designator=D1(MBR120)
+Add component (AddParameter): Name = "I"; Value = "1.0A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "MBR120VLSF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "V"; Value = "20V"; VariantName = "[No Variations]"
+Added Component: Designator=DD1(ESP8266)
+Added Component: Designator=DD2(SOIC-8(3.90мм))
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/m25p16-vmn6tp-tr"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max freequency"; Value = "75 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "VCC"; Value = "2.7…3.6V"; VariantName = "[No Variations]"
+Added Component: Designator=K1(NRP-12-C-05D-H)
+Added Component: Designator=L1(FB 0603)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/lqw18an2n2d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "2.2 нГн"; VariantName = "[No Variations]"
+Added Component: Designator=L2(RES 0402)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/lqp15mn4n3b02d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Nom"; Value = "4.3nH"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(SMD02520C4)
+Add component (AddParameter): Name = "freequency"; Value = "26MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Korpus"; Value = "SMD02520C4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product0/8024602401"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "precission"; Value = "10ppm"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES 0805)
+Added Component: Designator=R2(RES 0805)
+Added Component: Designator=R3(RES 0805)
+Added Component: Designator=R4(RES 0805)
+Added Component: Designator=R5(RES 0805)
+Added Component: Designator=R6(RES 0805)
+Added Component: Designator=VD1(2112)
+Add component (AddParameter): Name = "Iout"; Value = "600"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "AP2112"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vdrop"; Value = "1300mV"; VariantName = "[No Variations]"
+Added Component: Designator=VT1(SOT23-3)
+Add component (AddParameter): Name = "Continuous drain current"; Value = "530mA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Gate-to-source voltage"; Value = "(+-)20B"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "id"; Value = "mosfert31"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "IXYS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "SI2325DS-T1-GE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power dissipation"; Value = "750W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rds"; Value = "1,2Ohm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Structure"; Value = "p-channel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Total gate charge"; Value = "7,7nC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "V drain-source max"; Value = "150B"; VariantName = "[No Variations]"
+Added Component: Designator=X1(USB_mini_B)
+Added Component: Designator=X2(Battery_x2AA)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product0/8008602593"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "BH2AAPC-4-12MM"; VariantName = "[No Variations]"
+Added Component: Designator=X3(Battery_x2AA)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product0/8008602593"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "BH2AAPC-4-12MM"; VariantName = "[No Variations]"
+Added Component: Designator=XP1(PLD-8)
+Add component (AddParameter): Name = "Connector type"; Value = "Вилка на плату"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "NONAME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of contacts"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Разъем штыревой"; VariantName = "[No Variations]"
+Added Component: Designator=XP2(PLD-8)
+Add component (AddParameter): Name = "Connector type"; Value = "Вилка на плату"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "NONAME"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of contacts"; Value = "8"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Разъем штыревой"; VariantName = "[No Variations]"
+Added Component: Designator=С2(0201 C0G 7пФ 25В)
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product/grm0335c1e7r0bd01d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Емкость"; Value = "7пФ"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Корпус"; Value = "smd 0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "25"; VariantName = "[No Variations]"
+Added Component: Designator=С3(RES 0402)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm152c80g104ke19d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "100nF"; VariantName = "[No Variations]"
+Added Component: Designator=С7(FB 0603)
+Added Component: Designator=С11(FB 0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm188r60g106me47d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "4В"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "10мкФ"; VariantName = "[No Variations]"
+Added Component: Designator=С12(FB 0603)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/grm188r60g106me47d"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Напряжение"; Value = "4В"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Номинал"; Value = "10мкФ"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3,3B Pin=C4-2
+Added Pin To Net: NetName=3,3B Pin=C5-1
+Added Pin To Net: NetName=3,3B Pin=C6-1
+Added Pin To Net: NetName=3,3B Pin=DD1-1
+Added Pin To Net: NetName=3,3B Pin=DD1-7
+Added Pin To Net: NetName=3,3B Pin=DD1-29
+Added Pin To Net: NetName=3,3B Pin=DD1-30
+Added Pin To Net: NetName=3,3B Pin=L2-2
+Added Pin To Net: NetName=3,3B Pin=VD1-5
+Added Pin To Net: NetName=3,3B Pin=С7-1
+Added Pin To Net: NetName=3,3B Pin=С11-2
+Added Net: Name=3,3B
+Added Pin To Net: NetName=3.3B Pin=DD2-8
+Added Pin To Net: NetName=3.3B Pin=XP1-1
+Added Net: Name=3.3B
+Added Pin To Net: NetName=CLK Pin=DD1-21
+Added Pin To Net: NetName=CLK Pin=R5-1
+Added Net: Name=CLK
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=DD1-33
+Added Pin To Net: NetName=GND Pin=DD2-4
+Added Pin To Net: NetName=GND Pin=K1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R6-1
+Added Pin To Net: NetName=GND Pin=VD1-2
+Added Pin To Net: NetName=GND Pin=X1-5
+Added Pin To Net: NetName=GND Pin=X3-2
+Added Pin To Net: NetName=GND Pin=XP1-8
+Added Pin To Net: NetName=GND Pin=С2-2
+Added Pin To Net: NetName=GND Pin=С3-2
+Added Pin To Net: NetName=GND Pin=С7-2
+Added Pin To Net: NetName=GND Pin=С11-1
+Added Pin To Net: NetName=GND Pin=С12-1
+Added Net: Name=GND
+Added Pin To Net: NetName=HOLD Pin=DD1-18
+Added Pin To Net: NetName=HOLD Pin=DD2-7
+Added Net: Name=HOLD
+Added Pin To Net: NetName=IO0 Pin=DD1-15
+Added Pin To Net: NetName=IO0 Pin=XP1-2
+Added Net: Name=IO0
+Added Pin To Net: NetName=IO2 Pin=DD1-14
+Added Pin To Net: NetName=IO2 Pin=XP1-4
+Added Net: Name=IO2
+Added Pin To Net: NetName=IO4 Pin=DD1-16
+Added Pin To Net: NetName=IO4 Pin=XP1-6
+Added Net: Name=IO4
+Added Pin To Net: NetName=IO5 Pin=DD1-24
+Added Pin To Net: NetName=IO5 Pin=XP1-7
+Added Net: Name=IO5
+Added Pin To Net: NetName=IO12 Pin=DD1-10
+Added Pin To Net: NetName=IO12 Pin=XP2-4
+Added Net: Name=IO12
+Added Pin To Net: NetName=IO13 Pin=DD1-12
+Added Pin To Net: NetName=IO13 Pin=XP2-5
+Added Net: Name=IO13
+Added Pin To Net: NetName=IO14 Pin=DD1-9
+Added Pin To Net: NetName=IO14 Pin=XP2-6
+Added Net: Name=IO14
+Added Pin To Net: NetName=IO15 Pin=DD1-13
+Added Pin To Net: NetName=IO15 Pin=XP2-7
+Added Net: Name=IO15
+Added Pin To Net: NetName=Net*_IN Pin=C1-1
+Added Pin To Net: NetName=Net*_IN Pin=L1-1
+Added Net: Name=Net*_IN
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=R3-2
+Added Pin To Net: NetName=NetC8_2 Pin=VD1-1
+Added Pin To Net: NetName=NetC8_2 Pin=VT1-3
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=DD1-27
+Added Net: Name=NetC9_2
+Added Pin To Net: NetName=NetC10_2 Pin=C10-2
+Added Pin To Net: NetName=NetC10_2 Pin=DD1-28
+Added Net: Name=NetC10_2
+Added Pin To Net: NetName=NetDD1_2 Pin=DD1-2
+Added Pin To Net: NetName=NetDD1_2 Pin=L1-2
+Added Pin To Net: NetName=NetDD1_2 Pin=С2-1
+Added Net: Name=NetDD1_2
+Added Pin To Net: NetName=NetDD1_3 Pin=DD1-3
+Added Pin To Net: NetName=NetDD1_3 Pin=DD1-4
+Added Pin To Net: NetName=NetDD1_3 Pin=L2-1
+Added Pin To Net: NetName=NetDD1_3 Pin=С3-1
+Added Net: Name=NetDD1_3
+Added Pin To Net: NetName=NetDD1_26 Pin=DD1-26
+Added Pin To Net: NetName=NetDD1_26 Pin=R4-1
+Added Net: Name=NetDD1_26
+Added Pin To Net: NetName=NetDD1_31 Pin=DD1-31
+Added Pin To Net: NetName=NetDD1_31 Pin=R1-1
+Added Net: Name=NetDD1_31
+Added Pin To Net: NetName=NetDD2_6 Pin=DD2-6
+Added Pin To Net: NetName=NetDD2_6 Pin=R5-2
+Added Net: Name=NetDD2_6
+Added Pin To Net: NetName=NetK1_3 Pin=K1-3
+Added Pin To Net: NetName=NetK1_3 Pin=R6-2
+Added Pin To Net: NetName=NetK1_3 Pin=С12-2
+Added Net: Name=NetK1_3
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetR3_1 Pin=VD1-3
+Added Net: Name=NetR3_1
+Added Pin To Net: NetName=NetX2_2 Pin=X2-2
+Added Pin To Net: NetName=NetX2_2 Pin=X3-1
+Added Net: Name=NetX2_2
+Added Pin To Net: NetName=RST Pin=DD1-32
+Added Pin To Net: NetName=RST Pin=XP2-8
+Added Net: Name=RST
+Added Pin To Net: NetName=RXD_P Pin=DD1-25
+Added Pin To Net: NetName=RXD_P Pin=XP1-5
+Added Net: Name=RXD_P
+Added Pin To Net: NetName=SCS Pin=DD1-20
+Added Pin To Net: NetName=SCS Pin=DD2-1
+Added Net: Name=SCS
+Added Pin To Net: NetName=SDI Pin=DD1-23
+Added Pin To Net: NetName=SDI Pin=DD2-5
+Added Net: Name=SDI
+Added Pin To Net: NetName=SDO Pin=DD1-22
+Added Pin To Net: NetName=SDO Pin=DD2-2
+Added Net: Name=SDO
+Added Pin To Net: NetName=SLEEP Pin=DD1-8
+Added Pin To Net: NetName=SLEEP Pin=K1-4
+Added Net: Name=SLEEP
+Added Pin To Net: NetName=TOUT Pin=DD1-6
+Added Pin To Net: NetName=TOUT Pin=XP2-1
+Added Net: Name=TOUT
+Added Pin To Net: NetName=TXD_P Pin=R4-2
+Added Pin To Net: NetName=TXD_P Pin=XP1-3
+Added Net: Name=TXD_P
+Added Pin To Net: NetName=VBAT Pin=VT1-2
+Added Pin To Net: NetName=VBAT Pin=X2-1
+Added Net: Name=VBAT
+Added Pin To Net: NetName=VCC Pin=K1-2
+Added Pin To Net: NetName=VCC Pin=R2-1
+Added Pin To Net: NetName=VCC Pin=VT1-1
+Added Pin To Net: NetName=VCC Pin=X1-1
+Added Net: Name=VCC
+Added Pin To Net: NetName=VIO1 Pin=DD1-11
+Added Pin To Net: NetName=VIO1 Pin=XP2-2
+Added Net: Name=VIO1
+Added Pin To Net: NetName=VIO2 Pin=DD1-17
+Added Pin To Net: NetName=VIO2 Pin=XP2-3
+Added Net: Name=VIO2
+Added Pin To Net: NetName=WP Pin=DD1-19
+Added Pin To Net: NetName=WP Pin=DD2-3
+Added Net: Name=WP
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

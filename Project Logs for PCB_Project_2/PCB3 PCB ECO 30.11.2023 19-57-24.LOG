@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=RST Pin=K1-2
+Added Differential Pair: Name=UART
+Added Room: Name=Sheet1

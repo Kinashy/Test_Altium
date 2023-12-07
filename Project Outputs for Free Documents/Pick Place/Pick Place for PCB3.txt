@@ -1,0 +1,45 @@
+Altium Designer Pick and Place Locations
+D:\ÌÓÂ‚ ÍÓ‚˜Â„\Œ·‡ÁÓ‚‡ÌËÂ\—¿œ–\PCB_Project_2\Project Outputs for Free Documents\Pick Place\Pick Place for PCB3.txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       06.12.23
+Time:       19:36
+Revision:   6d201596bd1dd630dd4b86f277e090a39aaab1ba
+Variant:    No variations
+Units used: mil
+
+Designator Comment       Layer    Footprint        Center-X(mil) Center-Y(mil) Rotation Description     
+R4         499           TopLayer RES_0402         754.882       1499.370      180      ""              
+K1         "gost relay"  TopLayer RELE             1514.232      692.775       90       ""              
+C9         7ÔÍ‘          TopLayer 0201_C0G_7Ô‘_25¬ 649.764       1755.275      360      ""              
+C10        7ÔÍ‘          TopLayer 0201_C0G_7Ô‘_25¬ 652.520       1668.661      180      ""              
+R5         200ŒÏ         TopLayer RES_0805         928.110       1724.272      90       ""              
+C6         100Ì‘         TopLayer RES_0402         841.496       1223.780      270      ""              
+—12        10ÏÍ‘         TopLayer FB_0603          1168.268      932.441       90       ""              
+—11        10ÏÍ‘         TopLayer FB_0603          577.716       893.071       270      ""              
+—7         1ÏÍ‘          TopLayer FB_0603          1184.016      1263.150      360      ""              
+—3         0,1ÏÍ‘        TopLayer RES_0402         909.449       1224.409      270      ""              
+XP2        PLD-8         TopLayer PLD-8            372.992       1704.488      270      "PLD connector" 
+XP1        PLD-8         TopLayer PLD-8            1400.551      1700.551      270      "PLD connector" 
+X2         battery_x2    TopLayer Battery_x2AA     2395.669      1248.032      270      ""              
+X1         usb_micro     TopLayer USB_mini_B       813.937       194.252       180      ""              
+VT1        ""            TopLayer SOT23-3          900.551       692.284       0        N-MOSFET        
+VD1        ap2112        TopLayer 2112             408.425       597.795       270      ""              
+R6         2K            TopLayer RES_0805         1074.803      925.689       90       ""              
+R3         2K            TopLayer RES_0805         408.425       856.161       270      ""              
+R2         10k           TopLayer RES_0805         703.701       536.279       270      ""              
+R1         12k           TopLayer RES_0805         541.791       1239.527      180      ""              
+L2         4,3Ì√         TopLayer RES_0402         975.354       1223.780      270      ""              
+L1         2,2Ì√         TopLayer FB_0603          865.118       1133.228      360      ""              
+DD2        M25P16-VMN6TP TopLayer SOIC-8(3.90ÏÏ)   944.842       1939.330      360      ""              
+C8         10ÏÍ‘         TopLayer FB_0603          1024.606      444.882       360      ""              
+C5         0,1ÏÍ‘        TopLayer RES_0402         1027.559      1137.795      270      ""              
+C4         10ÏÍ‘         TopLayer FB_0603          943.858       2093.858      360      ""              
+C1         3Ô‘           TopLayer 0201_C0G_7Ô‘_25¬ 755.905       1129.921      180      ""              
+—2         2,4Ô‘         TopLayer 0201_C0G_7Ô‘_25¬ 948.819       1129.921      270      ""              
+D1         ""            TopLayer MBR120           1041.339      579.724       270      ""              
+Q1         26Ã√ˆ         TopLayer SMD02520C4       556.102       1824.803      0        ""              
+DD1        esp8266ex     TopLayer ESP8266          970.433       1457.047      90       ""              
+X3         battery_x2    TopLayer Battery_x2AA     3742.126      1248.032      270      ""              

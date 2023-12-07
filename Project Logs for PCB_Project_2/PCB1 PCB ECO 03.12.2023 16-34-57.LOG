@@ -1,0 +1,10 @@
+Added Component: Designator=Q1(SMD02520C4)
+Add component (AddParameter): Name = "freequency"; Value = "26MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Korpus"; Value = "SMD02520C4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Link"; Value = "https://www.chipdip.ru/product0/8024602401"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "precission"; Value = "10ppm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=RST Pin=K1-3
+Added Pin To Net: NetName=NetC10_2 Pin=Q1-1
+Added Pin To Net: NetName=NetC9_2 Pin=Q1-4
+Added Member To Class: ClassName=Sheet1 Member=Component Q1 26ÌÃö
+Added Room: Name=Sheet1

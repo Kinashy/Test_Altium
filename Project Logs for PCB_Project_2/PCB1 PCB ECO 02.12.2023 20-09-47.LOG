@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=K1-1
+Removed Pin From Net: NetName=VCC Pin=K1-2
+Removed Pin From Net: NetName=SLEEP Pin=K1-3
+Added Pin To Net: NetName=VCC Pin=K1-1
+Added Pin To Net: NetName=RST Pin=K1-3
+Added Pin To Net: NetName=SLEEP Pin=K1-4
+Added Pin To Net: NetName=GND Pin=K1-8
+Added Pin To Net: NetName=NetK1_3 Pin=K1-3
+Added Pin To Net: NetName=NetK1_3 Pin=R6-2
+Added Pin To Net: NetName=NetK1_3 Pin=Ñ12-2
+Added Net: Name=NetK1_3
+Added Room: Name=Sheet1

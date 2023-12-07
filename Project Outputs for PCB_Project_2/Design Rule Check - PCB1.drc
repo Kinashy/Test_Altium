@@ -1,0 +1,73 @@
+Protel Design System Design Rule Check
+PCB File : D:\ноев ковчег\Образование\САПР\PCB_Project_2\PCB1.PcbDoc
+Date     : 03.12.2023
+Time     : 17:14:45
+
+Processing Rule : Clearance Constraint (Gap=0.05mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=Yes) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C5-2(143.9mm,75.8mm) on Top Layer And Pad С7-2(148.674mm,79.384mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C6-2(139.174mm,77.984mm) on Top Layer And Track (140.874mm,77.533mm)(140.874mm,77.984mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad C9-1(133.974mm,91.884mm) on Top Layer And Pad DD2-4(139.074mm,94.654mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetDD1_3 Between Track (141.874mm,81.634mm)(141.874mm,81.784mm) on Top Layer And Pad DD1-4(142.199mm,81.884mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad DD2-4(139.074mm,94.654mm) on Top Layer And Via (144.925mm,89.7mm) from GND to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net 3,3B Between Track (131.7mm,98.2mm)(131.7mm,98.3mm) on Top Layer And Pad DD2-8(144.524mm,98.464mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R1-2(130.624mm,78.784mm) on Top Layer And Track (136.625mm,76.125mm)(136.8mm,76.3mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetK1_3 Between Pad R6-2(145.1mm,71.75mm) on Top Layer And Pad С12-2(147.474mm,71.784mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad X3-2(56.474mm,49.684mm) on Multi-Layer And Pad VD1-2(128.174mm,63.859mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad VD1-2(128.174mm,63.859mm) on Top Layer And Track (135.674mm,59.984mm)(135.897mm,59.761mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net VBAT Between Pad X2-1(102.874mm,49.884mm) on Multi-Layer And Pad VT1-2(141.624mm,63.784mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetX2_2 Between Pad X3-1(69.874mm,49.584mm) on Multi-Layer And Pad X2-2(89.474mm,49.984mm) on Multi-Layer 
+   Violation between Un-Routed Net Constraint: Net 3,3B Between Track (127.274mm,94.284mm)(128.184mm,94.284mm) on Bottom Layer And Track (131.287mm,81.997mm)(131.287mm,83.812mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (127.287mm,91.725mm)(127.774mm,91.824mm) on Top Layer And Via (131.974mm,90.784mm) from Top Layer to GND 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (140.874mm,77.533mm)(140.874mm,77.984mm) on Top Layer And Via (142.449mm,83.209mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net 3,3B Between Track (142.574mm,77.984mm)(143.674mm,77.984mm) on Top Layer And Via (145.274mm,79.384mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (142.975mm,58.85mm)(143.025mm,58.6mm) on Top Layer And Via (157.774mm,57.384mm) from Top Layer to GND 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (128.574mm,77.484mm) from Top Layer to GND And Via (130.174mm,71.684mm) from Top Layer to GND 
+Rule Violations :18
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.1mm) (Max=0.6mm) (Preferred=0.25mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.127mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.05mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsText),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.1mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+   Violation between Net Antennae: Track (148.674mm,81.284mm)(150.774mm,81.284mm) on Bottom Layer 
+   Violation between Net Antennae: Via (128.574mm,77.484mm) from Top Layer to GND 
+   Violation between Net Antennae: Via (130.174mm,71.684mm) from Top Layer to GND 
+   Violation between Net Antennae: Via (131.974mm,90.784mm) from Top Layer to GND 
+   Violation between Net Antennae: Via (138.974mm,100.384mm) from Top Layer to GND 
+   Violation between Net Antennae: Via (144.925mm,89.7mm) from GND to Bottom Layer 
+   Violation between Net Antennae: Via (157.774mm,57.384mm) from Top Layer to GND 
+Rule Violations :7
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 25
+Waived Violations : 0
+Time Elapsed        : 00:00:02

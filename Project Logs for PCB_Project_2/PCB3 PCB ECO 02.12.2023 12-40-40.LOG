@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=UART_N Pin=DD1-26
+Removed Pin From Net: NetName=NetDD1_26 Pin=R4-1
+Removed Pin From Net: NetName=UART_N Pin=R4-2
+Change Component Comment : Designator=R4 Old Comment=499K New Comment=499Ê
+Change component parameters: Designator = "R4" ("R4"); Footprint = "RES 0402"; UniqueID = "\PKOKOBAW" ("\PKOKOBAW")
+Added Pin To Net: NetName=NetDD1_26 Pin=DD1-26
+Added Pin To Net: NetName=VCC Pin=K1-2
+Added Pin To Net: NetName=NetDD1_26 Pin=R4-1
+Added Pin To Net: NetName=UART_N Pin=R4-2
+Added Room: Name=Sheet1

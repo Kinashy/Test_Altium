@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=3,3Â Pin=XP2-3
+Change Component Comment : Designator=K1 Old Comment=Comment New Comment=gost relay
+Change component parameters: Designator = "K1" ("K1"); Footprint = "RELE"; UniqueID = "\OHCJZBAG" ("\OHCJZBAG")
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "New link"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.chipdip.ru/product/hfd4-5sr-im03gr"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "HFD4/5S(R) (IM03GR)"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=K1-1
+Added Pin To Net: NetName=RST Pin=K1-2
+Added Pin To Net: NetName=VCC Pin=K1-2
+Added Pin To Net: NetName=SLEEP Pin=K1-3
+Added Pin To Net: NetName=3.3B Pin=XP2-3
+Change Net Name : Old Net Name=3,3Â New Net Name=3,3B
+Change Net Name : Old Net Name=RXD_P New Net Name=UART_P
+Change Net Name : Old Net Name=TXD_P New Net Name=UART_N
+Added Pin To Net: NetName=NetK1_4 Pin=K1-4
+Added Pin To Net: NetName=NetK1_4 Pin=R6-2
+Added Pin To Net: NetName=NetK1_4 Pin=Ñ12-2
+Added Net: Name=NetK1_4
+Added Member To Class: ClassName=Sheet1 Member=Component K1 gost relay
+Added Room: Name=Sheet1
