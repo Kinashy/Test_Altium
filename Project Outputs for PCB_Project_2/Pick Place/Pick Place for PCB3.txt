@@ -4,9 +4,9 @@ D:\ноев ковчег\Образование\САПР\PCB_Project_2\Project Outputs for PCB_Project_2\
 ========================================================================================================================
 File Design Information:
 
-Date:       09.12.23
-Time:       18:50
-Revision:   de0ef9850f40dbf2566ea0e6bc810bafc9b1d6e3
+Date:       14.12.23
+Time:       18:51
+Revision:   f776db78481cca56496b313908d41d73313a7424
 Variant:    No variations
 Units used: mm
 
